@@ -1,0 +1,501 @@
+*{
+  background-color: #e7dbcb;
+  user-select: none;
+}
+
+/* Encabezado */
+header{
+  width: 100%;
+  height: 500px;
+}
+.contPortada{
+  display:flex;
+}
+#sombra{
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  z-index:2;
+  background-color: rgba(0, 0, 0, 0.570) ;
+  background-blend-mode: soft-light
+}
+#poo{
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.contPorTexto{
+  z-index: 3;
+  width: 100%;
+  padding-top:120px ;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 2;
+  font-size: 100px;
+  color: white;
+}
+
+
+/* Texto */
+.contendorTotal{
+  padding: 5% 7%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+  font-size: 26px;
+  line-height: 2;
+  text-align: justify;
+  display: inline;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+}
+footer h2 {
+  position: absolute;
+  display: inline;
+  color: white;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 35px;
+  margin-left: 50px;
+  display: inline;
+  z-index: 3;
+}
+
+.tik {
+  position: absolute;
+  width: 50px;
+  margin-left: 80%;
+  margin-top: 30px;
+  z-index: 3;
+}
+.insta {
+  position: absolute;
+  width: 50px;
+  margin-top: 30px;
+  margin-left: 90%;
+  z-index: 3;
+}
+#sombraFoot {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.473);
+  background-blend-mode: soft-light;
+}
+#ImgFoot {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+}
+
+
+
+
+/* Animacion de img */
+.dropdown{
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e7dbcb;
+  width: 280px;
+  height: 300px;
+  box-shadow: 0px 8px 30px 3px rgb(0, 0, 0);
+  border-radius:10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.tamImg{
+  width: 280px;
+  height: 200px;
+  border-radius:8px;
+  object-fit: cover;
+}
+.texImg{
+  text-decoration: underline #25CCF7;
+  display: inline;
+}
+.texDentro{
+  font-size: 25px;
+  padding-left: 5px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  text-decoration: underline #00a8ff;
+}
+.contendorTotal{
+  text-align: justify;
+}
+.datoAdd{
+  font-size: 20px;
+  padding-left: 5px;
+}
+.versiones{
+  font-size: 21px;
+}
+.verCuadro{
+  padding: 10px;
+}
+
+@media screen and (max-width:1000px){
+  .dropdown-content{
+    width: 270px;
+    height: 290px;
+  }
+  .tamImg{
+    width: 270px;
+    height: 190px;
+  }
+  .texDentro{
+    font-size: 24px;
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width:890px){
+  p{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width:870px){
+  .dropdown-content{
+    width: 255px;
+    height: 270px;
+  }
+  .tamImg{
+    width: 255px;
+    height: 190px;
+  }
+  .texDentro{
+    font-size: 21px;
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width:764px){
+  header{
+    height: 430px;
+  
+  }
+  #sombra{
+    height: 430px;
+  }
+  #poo{
+    height: 430px;
+  }
+  .contPorTexto{
+    font-size: 90px;
+  }
+  p{
+    font-size: 22px;
+  }
+  .texDentro{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:760px){
+  p{
+    font-size: 22px;
+  }
+  .dropdown-content{
+    width: 240px;
+    height: 265px;
+  }
+  .tamImg{
+    width: 240px;
+    height: 165px;
+  }
+  .texDentro{
+    font-size: 20px;
+  }
+  #let{
+    margin-left: 34%;
+    margin-top: 85px;
+  }
+  #ImgFoot{
+    height: 80px;
+  }
+  #sombraFoot{
+    height: 80px;
+  }
+  .tik{
+    margin-top: 20px;
+  }
+  .insta{
+    margin-top: 20px;
+  }
+  footer h2{
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width:717px){
+  p{
+    font-size: 23px;
+  }
+}
+@media screen and (max-width:716px){
+  header{
+    height: 400px;
+  
+  }
+  #sombra{
+    height: 400px;
+  }
+  #poo{
+    height: 400px;
+  }
+  .contPorTexto{
+    font-size: 75px;
+  }
+  p{
+    font-size: 23px;
+  }
+  .dropdown-content{
+    width: 220px;
+    height: 265px;
+  }
+  .tamImg{
+    width: 220px;
+    height: 160px;
+  }
+  .texDentro{
+    font-size: 20px;
+  }
+  .tik{
+    width: 47px;
+  }
+  .insta{
+    width: 47px;
+  }
+}
+@media screen and (max-width:695px){
+  p{
+    font-size: 22px;
+  }
+}
+@media screen and (max-width:692px){
+  p{
+    font-size: 19px;
+  }
+  .dropdown-content{
+    width: 200px;
+    height: 255px;
+  }
+  .tamImg{
+    width: 200px;
+    height: 150px;
+  }
+  a{
+    font-size: 23px;
+  }
+}
+@media screen and (max-width:652px){
+  header{
+    height: 350px;
+  
+  }
+  #sombra{
+    height: 350px;
+  }
+  #poo{
+    height: 350px;
+  }
+  .contPorTexto{
+    font-size: 65px;
+  }
+  p{
+    font-size: 17px;
+  }
+  .dropdown-content{
+    width: 200px;
+    height: 240px;
+  }
+  .tamImg{
+    width: 200px;
+    height: 150px;
+  }
+  .tik{
+    width: 42px;
+  }
+  .insta{
+    width: 42px;
+  }
+  .datoAdd{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:608px){
+
+  .dropdown-content{
+    width: 200px;
+    height: 240px;
+  }
+.tamImg{
+  width: 200px;
+  height: 150px;
+}
+  p{
+    font-size: 19px;
+  }
+  .tik{
+    width: 40px;
+  }
+  .insta{
+    width: 40px;
+  }
+  .datoAdd{
+    font-size: 15px;
+  }
+  footer h2 {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width:537px){
+  p{
+    font-size: 22px;
+  }
+  
+}
+@media screen and (max-width:533px){
+  p{
+    font-size: 17px;
+  }
+  .tik{
+    margin-top: 25px;
+    width: 35px;
+  }
+  .insta{
+    margin-top: 25px;
+    width: 35px;
+  }
+}
+@media screen and (max-width:519px){
+  p{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:544px){
+  header{
+    height: 310px;
+  
+  }
+  #sombra{
+    height: 310px;
+  }
+  #poo{
+    height: 310px;
+  }
+  .contPorTexto{
+    font-size: 55px;
+    padding-top:100px ;
+  }
+  p{
+    font-size: 18px;
+  }
+  footer h2{
+    font-size: 25px;
+  }
+  .insta{
+    width: 40px;
+  }
+  .tik {
+    width: 40px;
+    margin-left: 78%;
+  }
+}
+@media screen and (max-width:544px){
+    header{
+      height: 300px;
+    }
+    #sombra{
+      height: 300px;
+    }
+    #poo{
+      height: 300px;
+    }
+    .contPorTexto{
+      font-size: 55px;
+      padding-top:100px ;
+    }
+  p{
+    font-size: 19px;
+  }
+  .insta{
+    width: 35px;
+  }
+  .tik {
+    width: 35px;
+    margin-left: 78%;
+  }
+  footer h2 {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width:533px){
+  p{
+    font-size: 18px;
+  }
+  .dropdown{
+    margin: -3px;
+  }
+}
+@media screen and (max-width:503px){
+  p{
+    font-size: 18px;
+  }
+  .dropdown{
+    margin: -4px;
+  }
+}
+
+@media screen and (max-width:497px){
+  p{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width:481px){
+  p{
+    font-size: 16.2px;
+  }
+  .dropdown{
+    margin: -3px;
+  }
+  
+}
+@media screen and (max-width:417px){
+  p{
+    font-size: 14.4px;
+  }
+  .dropdown{
+    margin: -3px;
+  }
+  .insta{
+    width: 33px;
+  }
+  .tik {
+    width: 33px;
+    margin-left: 78%;
+  }
+}
+@media screen and (max-width:403px){
+  p{
+    font-size: 14px;
+  }
+  .dropdown{
+    margin: -4px;
+  }
+}

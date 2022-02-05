@@ -1,0 +1,38 @@
+body {
+  background-color: #e7dbcb;
+  user-select: none;
+}
+.arte{
+  position: absolute;
+width: 80%;
+height: 90%;
+left: 9%;
+top:3%;
+border: 0.5em solid rgb(228, 179, 88);
+}
+.letra_info{
+  font-size: 130%;
+  position: absolute;
+  width: 9.5%;
+  height: 7%;
+  left: 80%;
+  top: 87.4%;
+  z-index: 5;
+}
+.letra_info:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.letra_info {
+  transition: transform 0.5s;
+}
+.fondo_letra{
+  position: absolute;
+  width: 9.5%;
+  height: 7%;
+  left: 79%;
+  top: 85.7%;
+  background: #FFFFFF;
+  border-radius: 40px;
+  z-index: 4;
+}
